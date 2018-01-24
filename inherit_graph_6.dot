@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Nfa::const_iterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVata2_1_1Nfa_1_1Nfa_1_1const__iterator.html",tooltip="number of transitions; has linear time complexity "];
-}
