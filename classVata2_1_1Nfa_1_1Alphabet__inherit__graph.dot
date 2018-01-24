@@ -1,0 +1,14 @@
+digraph "Alphabet"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Alphabet",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CharAlphabet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVata2_1_1Nfa_1_1CharAlphabet.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DirectAlphabet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVata2_1_1Nfa_1_1DirectAlphabet.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="EnumAlphabet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVata2_1_1Nfa_1_1EnumAlphabet.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OnTheFlyAlphabet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVata2_1_1Nfa_1_1OnTheFlyAlphabet.html"];
+}
