@@ -66,12 +66,12 @@ addons:
       - graphviz
 
   coverity_scan:
-  #   # GitHub project metadata
-  #   project:
-  #     name: ondrik/libvata2
-  #     version: 0.1
-  #     description: libvata2: an automata library
-  #
+    # GitHub project metadata
+    project:
+      name: ondrik/libvata2
+      version: 0.1
+      description: libvata2: an automata library
+
   #   # Where email notification of build analysis results will be sent
   #   notification_email: ondra.lengal@gmail.com
   #
