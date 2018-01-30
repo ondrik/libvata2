@@ -130,5 +130,5 @@ addons:
 
     # Pattern to match selecting branches that will run analysis.
     # branch_pattern: coverity_scan
-    branch_pattern:
+    branch_pattern: *
 # }}}
