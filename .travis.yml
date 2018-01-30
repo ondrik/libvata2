@@ -65,7 +65,7 @@ addons:
       - doxygen
       - graphviz
 
-  # coverity_scan:
+  coverity_scan:
   #   # GitHub project metadata
   #   project:
   #     name: ondrik/libvata2
