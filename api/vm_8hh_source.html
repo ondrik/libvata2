@@ -162,23 +162,25 @@
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classVata2_1_1VM_1_1VirtualMachine.html#a81fc90eadaa548058080f70731c6e148">execute_line</a>(<span class="keyword">const</span> <a class="code" href="namespaceVata2_1_1Parser.html#aa0fe9a04182601237d66241a75595bd3">Parser::BodyLine</a>&amp; line);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classVata2_1_1VM_1_1VirtualMachine.html#a70d369f99a18a721c726ac47f21ba692">process_token</a>(<span class="keyword">const</span> std::string&amp; tok);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classVata2_1_1VM_1_1VirtualMachine.html#adb7921e592642c4aca57cf0294c54867">exec_cmd</a>(<span class="keyword">const</span> std::vector&lt;VMValue&gt;&amp; exec_vec);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/// The exception for virtual machine errors</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classVata2_1_1VM_1_1VMException.html">  116</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classVata2_1_1VM_1_1VMException.html">VMException</a> : <span class="keyword">public</span> std::runtime_error</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// use base class constructors</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">using</span> std::runtime_error::runtime_error;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">    /// Cleans the stack</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classVata2_1_1VM_1_1VirtualMachine.html#a65fd69f280e508061f7fc98a5b24a5cf">clean_stack</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/// The exception for virtual machine errors</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classVata2_1_1VM_1_1VMException.html">  118</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classVata2_1_1VM_1_1VMException.html">VMException</a> : <span class="keyword">public</span> std::runtime_error</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// use base class constructors</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">using</span> std::runtime_error::runtime_error;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// CLOSING NAMESPACES AND GUARDS</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">/* VM */</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">/* Vata2 */</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _VATA2_VM_HH_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">// CLOSING NAMESPACES AND GUARDS</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">/* VM */</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <span class="comment">/* Vata2 */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _VATA2_VM_HH_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="structVata2_1_1Parser_1_1ParsedSection_html"><div class="ttname"><a href="structVata2_1_1Parser_1_1ParsedSection.html">Vata2::Parser::ParsedSection</a></div><div class="ttdoc">Parsed data (single section) </div><div class="ttdef"><b>Definition:</b> <a href="parser_8hh_source.html#l00041">parser.hh:41</a></div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VirtualMachine_html_adb7921e592642c4aca57cf0294c54867"><div class="ttname"><a href="classVata2_1_1VM_1_1VirtualMachine.html#adb7921e592642c4aca57cf0294c54867">Vata2::VM::VirtualMachine::exec_cmd</a></div><div class="ttdeci">void exec_cmd(const std::vector&lt; VMValue &gt; &amp;exec_vec)</div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VirtualMachine_html_a81fc90eadaa548058080f70731c6e148"><div class="ttname"><a href="classVata2_1_1VM_1_1VirtualMachine.html#a81fc90eadaa548058080f70731c6e148">Vata2::VM::VirtualMachine::execute_line</a></div><div class="ttdeci">void execute_line(const Parser::BodyLine &amp;line)</div><div class="ttdoc">Executes one line of code. </div></div>
@@ -196,15 +198,16 @@
 <div class="ttc" id="classVata2_1_1VM_1_1VirtualMachine_html_a953b53f81974928b2c93323f770f715c"><div class="ttname"><a href="classVata2_1_1VM_1_1VirtualMachine.html#a953b53f81974928b2c93323f770f715c">Vata2::VM::VirtualMachine::run</a></div><div class="ttdeci">void run(const Vata2::Parser::Parsed &amp;parsed)</div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VMValue_html_a07c83a646459899acb833f3c3fd99262"><div class="ttname"><a href="classVata2_1_1VM_1_1VMValue.html#a07c83a646459899acb833f3c3fd99262">Vata2::VM::VMValue::operator=</a></div><div class="ttdeci">VMValue &amp; operator=(const VMValue &amp;rhs)</div><div class="ttdoc">assignment operator </div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00057">vm.hh:57</a></div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VMValue_html"><div class="ttname"><a href="classVata2_1_1VM_1_1VMValue.html">Vata2::VM::VMValue</a></div><div class="ttdoc">Data type representing a value, which is composed of a type and a pointer to a general memory...</div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00038">vm.hh:38</a></div></div>
-<div class="ttc" id="classVata2_1_1VM_1_1VMException_html"><div class="ttname"><a href="classVata2_1_1VM_1_1VMException.html">Vata2::VM::VMException</a></div><div class="ttdoc">The exception for virtual machine errors. </div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00116">vm.hh:116</a></div></div>
+<div class="ttc" id="classVata2_1_1VM_1_1VMException_html"><div class="ttname"><a href="classVata2_1_1VM_1_1VMException.html">Vata2::VM::VMException</a></div><div class="ttdoc">The exception for virtual machine errors. </div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00118">vm.hh:118</a></div></div>
 <div class="ttc" id="parser_8hh_html"><div class="ttname"><a href="parser_8hh.html">parser.hh</a></div></div>
+<div class="ttc" id="classVata2_1_1VM_1_1VirtualMachine_html_a65fd69f280e508061f7fc98a5b24a5cf"><div class="ttname"><a href="classVata2_1_1VM_1_1VirtualMachine.html#a65fd69f280e508061f7fc98a5b24a5cf">Vata2::VM::VirtualMachine::clean_stack</a></div><div class="ttdeci">void clean_stack()</div><div class="ttdoc">Cleans the stack. </div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VMValue_html_a73eceb444883bc1f20b8e65ad1e7b810"><div class="ttname"><a href="classVata2_1_1VM_1_1VMValue.html#a73eceb444883bc1f20b8e65ad1e7b810">Vata2::VM::VMValue::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const VMValue &amp;val)</div><div class="ttdoc">conversion to string </div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00072">vm.hh:72</a></div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VirtualMachine_html_aaa1d6986687688c3abab0b11f0223f2e"><div class="ttname"><a href="classVata2_1_1VM_1_1VirtualMachine.html#aaa1d6986687688c3abab0b11f0223f2e">Vata2::VM::VirtualMachine::run_code</a></div><div class="ttdeci">void run_code(const Vata2::Parser::ParsedSection &amp;parsec)</div></div>
 <div class="ttc" id="classVata2_1_1VM_1_1VMValue_html_a1b399cdd4644d80090225fd203ada7f0"><div class="ttname"><a href="classVata2_1_1VM_1_1VMValue.html#a1b399cdd4644d80090225fd203ada7f0">Vata2::VM::VMValue::get_ptr</a></div><div class="ttdeci">VMPointer get_ptr() const </div><div class="ttdoc">returns the included pointer </div><div class="ttdef"><b>Definition:</b> <a href="vm_8hh_source.html#l00069">vm.hh:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 20:25:53 for libvata2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 14:28:24 for libvata2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
